@@ -50,6 +50,13 @@
 - Spring Boot DevTools
 - Spring Security
 
+- Spring Actuator
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+
 
 ### Spring Boot Profiles
 ### Spring Boot with H2 Database
+### Spring Boot Actuator
