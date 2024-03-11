@@ -49,3 +49,7 @@
 
 - Spring Boot DevTools
 - Spring Security
+
+
+### Spring Boot Profiles
+### Spring Boot with H2 Database
