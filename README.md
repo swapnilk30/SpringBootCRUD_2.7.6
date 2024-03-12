@@ -76,3 +76,5 @@
 ### Spring Boot Actuator
 
 - http://localhost:9090/actuator
+
+### SpringBoot Logging
