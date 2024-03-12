@@ -47,16 +47,32 @@
 			<scope>runtime</scope>
 		</dependency>
 
-- Spring Boot DevTools
-- Spring Security
-
 - Spring Actuator
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
+- Spring Boot DevTools
+- Spring Security
+
+### Entities :
+
+- Student
+- Employee
+
 
 ### Spring Boot Profiles
+
+- application.properties
+- application-dev.properties
+- aplication-prod.properties
+
 ### Spring Boot with H2 Database
+
+- http://localhost:9090/h2-console
+
 ### Spring Boot Actuator
+
+- http://localhost:9090/actuator
