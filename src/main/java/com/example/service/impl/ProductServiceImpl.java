@@ -2,6 +2,7 @@ package com.example.service.impl;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 import org.springframework.data.domain.Page;
@@ -56,6 +57,16 @@ public class ProductServiceImpl implements ProductService{
 		List<Product> content = getAllProductByPage.getContent();
 		
 		return content;
+	}
+
+
+	//
+	@Override
+	public Product getProductById(String productId) {
+		
+		Optional<Product> findById = productRepository.findById(productId);
+		
+		return findById.isPresent() ? findById.get():null;
 	}
 
 }
