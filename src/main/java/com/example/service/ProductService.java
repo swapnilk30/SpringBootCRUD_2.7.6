@@ -12,5 +12,8 @@ public interface ProductService {
 	
 	// get All Products
 	List<Product> getAllProduct();
+	
+	// get All products by page
+	List<Product> getAllProductByPage(int pageNumber,int pageSize);
 
 }

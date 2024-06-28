@@ -4,6 +4,9 @@ import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import com.example.entity.Product;
@@ -39,6 +42,20 @@ public class ProductServiceImpl implements ProductService{
 	public List<Product> getAllProduct() {
 		
 		return productRepository.findAll();
+	}
+
+
+	//
+	@Override
+	public List<Product> getAllProductByPage(int pageNumber, int pageSize) {
+		
+		Pageable pageable = PageRequest.of(pageNumber, pageSize);
+		
+		Page<Product> getAllProductByPage = productRepository.findAll(pageable);
+		
+		List<Product> content = getAllProductByPage.getContent();
+		
+		return content;
 	}
 
 }
