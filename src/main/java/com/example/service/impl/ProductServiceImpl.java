@@ -1,6 +1,8 @@
 package com.example.service.impl;
 
+import java.util.Date;
 import java.util.List;
+import java.util.UUID;
 
 import org.springframework.stereotype.Service;
 
@@ -18,6 +20,19 @@ public class ProductServiceImpl implements ProductService{
 		this.productRepository = productRepository;
 	}
 	
+
+	@Override
+	public Product saveProduct(Product product) {
+		// Generate random product Id
+		product.setProductId(UUID.randomUUID().toString());
+		
+		// added date
+		product.setAddedDate(new Date());
+		
+		Product savedProduct = productRepository.save(product);
+		
+		return savedProduct;
+	}
 	
 	//
 	@Override
