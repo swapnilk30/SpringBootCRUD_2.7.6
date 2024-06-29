@@ -55,11 +55,11 @@
 		</dependency>
 
 - jackson-dataformat-xml
-    - Data format extension for Jackson to offer alternative support for serializing POJOs as XML and deserializing XML as pojos.
-            <dependency>
-                <groupId>com.fasterxml.jackson.dataformat</groupId>
-                <artifactId>jackson-dataformat-xml</artifactId>
-            </dependency>
+        
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+        </dependency>
 
 ### Entities :
 
