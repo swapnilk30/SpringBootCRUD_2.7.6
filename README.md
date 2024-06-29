@@ -54,13 +54,14 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
-- Spring Boot DevTools
-- Spring Security
+- jackson-dataformat-xml
+    - Data format extension for Jackson to offer alternative support for serializing POJOs as XML and deserializing XML as pojos.
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+        </dependency>
 
 ### Entities :
-
-- Student
-- Employee
 
 
 ### Spring Boot Profiles
@@ -79,15 +80,6 @@
 
 ### SpringBoot Logging
 
-
-```
-{
-    "title": "Wireless Headphones",
-    "description": "Bluetooth over-ear headphones with noise-cancellation and 20 hours battery life.",
-    "price": 99.99,
-    "quantity": 150
-}
-```
 ```
 [
     {
